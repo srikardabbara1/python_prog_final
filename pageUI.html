@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Formula Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Select an Excel Formula</h2>
+        <form id="formulaForm">
+            <label for="formulas">Choose a formula:</label>
+            <select name="formulas" id="formulaSelection">
+                <option value="VLOOKUP">VLOOKUP</option>
+                <option value="COUNTIF">COUNTIF</option>
+                <option value="INDEXMATCH">INDEXMATCH</option>
+                <option value="XLOOKUP">XLOOKUP</option>
+                <option value="CONCATENATE">CONCATENATE</option>
+                <option value="CHOOSE">CHOOSE</option>
+                <option value="SUBSITUTE">SUBSITUTE</option>
+                <option value="MINIF">MINIF</option>
+                <option value="MAXIF">MAXIF</option>
+                <option value="IFERROR">IFERROR</option>
+                <!-- Add other formulas as options here -->
+            </select>
+            <!-- Placeholder for dynamic input fields -->
+            <input type="submit" value="Generate Formula">
+        </form>
+        <div id="formulaOutput">
+            <!-- Placeholder where the output formula will be displayed -->
+        </div>
+    </div>
+</body>
+</html>
